@@ -1,0 +1,23 @@
+/*
+ * 本书配套视频教程网址（架构师系列培训）:
+ *         www.365itedu.com
+ * 365IT学院，让学习变得更简单！
+ */
+package com.itedu365.best0102;
+
+/**
+ *
+ * 【Java最佳编程实践66例】
+ *
+ *  01、避免使用空块 —— 多余的分号（;）
+ *
+ *  @author 颜廷吉
+ */
+public class After {
+	// 如果判断为真打印结果
+	public static void method(boolean isTrue) {
+		if (isTrue) {
+			System.out.println("OK");
+		}
+	}
+}

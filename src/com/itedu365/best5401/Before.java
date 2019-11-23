@@ -1,0 +1,33 @@
+/*
+ * 本书配套视频教程网址（架构师系列培训）:
+ *         www.365itedu.com
+ * 365IT学院，让学习变得更简单！
+ */
+
+package com.itedu365.best5401;
+
+/**
+ *
+ * 【Java代码与架构之完美优化——实战经典】
+ *
+ *  54、避免使失败失去原子性
+ *
+ *  @author 颜廷吉
+ */
+public class Before {
+    public static void method() {
+        // 为节省代码行数，用控制台输出值代替实际操作
+        // 业务需求：一次添加用户，需要同时在用户表与角色表分别插入一条数据
+
+        // 事务1
+        System.out.println("start transaction!");
+        // 向用户表插入一条数据
+        System.out.println("update db : insert into user");
+        System.out.println("end transaction!");
+        // 事务2
+        System.out.println("start transaction!");
+        // 向角色表插入一条数据
+        System.out.println("update db : insert into user_role");
+        System.out.println("end transaction!");
+    }
+}
